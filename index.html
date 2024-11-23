@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>OGI</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      /* General Reset and Body Styling */
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f4f8;
+        color: #333;
+      }
+
+      /* Header Styling */
+      header {
+        background: linear-gradient(45deg, #0066cc, #004d99);
+        color: white;
+        padding: 20px 0;
+      }
+
+      header .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      header nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 16px;
+      }
+
+      header nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* Banner Section */
+      #banner {
+        background-color: #f9f9f9;
+        padding: 60px 0;
+        text-align: center;
+      }
+
+      #banner h1 {
+        font-size: 36px;
+        color: #003366;
+        margin-bottom: 20px;
+      }
+
+      #banner .flex {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+      }
+
+      #banner .flex div {
+        background: #ffffff;
+        padding: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: center;
+        flex: 1;
+      }
+
+      #banner h3 {
+        font-size: 24px;
+        color: #0066cc;
+      }
+
+      #banner p {
+        font-size: 18px;
+        color: #333;
+      }
+
+      /* Three Section (Flex Layout) */
+      #three {
+        background-color: #ffffff;
+        padding: 60px 0;
+        text-align: center;
+      }
+
+      #three .inner {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      #three .flex {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      /* Styling for Article Cards */
+      article {
+        background: #f9f9f9;
+        border-radius: 12px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        width: 30%;
+      }
+
+      article h3 {
+        color: #004d99;
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+
+      article p {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .image-wrapper img, .image.round img {
+        width: 100%;
+        max-width: 220px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .image.round img {
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+
+      /* Footer Section */
+      footer {
+        background: #003366;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      footer h1 {
+        font-size: 18px;
+        margin: 0;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .flex {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        article {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <a href="index.html" class="logo"><strong>MCA Days</strong></a>
+        <nav id="nav">
+          <a href="index.html">Home</a>
+          <a href="dgiOneView.html">Student</a>
+          <a href="adminLogin.html">Admin</a>
+        </nav>
+        <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="inner">
+        <header>
+          <h1>Welcome to OGI</h1>
+        </header>
+
+        <div class="flex">
+          <div>
+            <h3>Address</h3>
+            <p>Raisen Road, Patel Nagar<br> Bhopal, Madhya Pradesh 462003</p>
+          </div>
+
+          <div>
+            <h3>Contact Number</h3>
+            <p>+(91) 7979720109</p>
+          </div>
+
+          <div>
+            <h3>Email Address</h3>
+            <p>OGI@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three Section -->
+    <section id="three">
+      <div class="inner">
+        <div class="flex">
+          <!-- College Image -->
+          <div class="image-wrapper">
+            <img src="download.jpeg" alt="College Building" />
+          </div>
+
+          <!-- Article 1: Dr. A.P.J. Abdul Kalam -->
+          <article>
+            <div class="image round">
+              <img src="apj sir1.png" alt="Dr. A.P.J. Abdul Kalam" />
+            </div>
+            <header>
+              <h3>Dr. A.P.J. Abdul Kalam</h3>
+            </header>
+            <p>A.P.J. Abdul Kalam, in full Akir Pakir Jainulabdeen Abdul Kalam, (born October 15, 1931, Rameswaram, India—died July 27, 2015, Shillong), Indian scientist and politician who played a leading role in the development of India's missile and nuclear weapons programs. He was president of India from 2002 to 2007.</p>
+          </article>
+
+          <!-- Article 2: About Our College -->
+          <article>
+            <div class="image round">
+              <img src="ogi.png" alt="About Our College" />
+            </div>
+            <header>
+              <h3>About Our College</h3>
+            </header>
+            <p>Our College provides career satisfaction and success outside of the workplace. With more and more occupations requiring advanced education, a college degree is critical to your success in today's workforce.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <hr>
+      <h1>All Rights Reserved @ Vishal & Team :: 2023-2025</h1>
+    </footer>
+
+  </body>
+</html>
